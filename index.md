@@ -42,7 +42,7 @@ workshop request yet, please also fill in
 about your workshop and our administrator may contact you if we need any extra
 information.
 </div>
-{% comment %}
+{% endcomment %}
 
 {% if page.carpentry != site.carpentry %}
 <div class="alert alert-warning">
