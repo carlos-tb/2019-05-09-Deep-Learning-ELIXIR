@@ -79,20 +79,25 @@ This workshop will present an quick overview of machine learning techniques at i
 
 The scope is eminently practical, and hands-on exercises will be performed using Python in a Jupyter notebook.
 
-{% if page.carpentry == "swc" %}
-{% include sc/intro.html %}
-{% elsif page.carpentry == "dc" %}
+{% if page.carpentry == "dc" %}
 {% include dc/intro.html %}
 {% elsif page.carpentry == "lc" %}
 {% include lc/intro.html %}
 {% endif %}
 
 
+{% comment %}
 AUDIENCE
+{% endcomment %}
 
-Any member of a partner organization of the ELIXIR project.
+<p id="who">
+  <strong>Who:</strong>
+  The course is aimed at graduate students and other researchers, particularly from life sciences, who would like to know how to use a supercomputer.
+  <strong>
+    No other experience is strictly necessary, but some affinity with general programming or scripting may be useful.
+  </strong>
+</p>
 
-Some affinity with general programming or scripting is desirable, but no previous Python experience is strictly necessary.
 
 {% if page.carpentry == "swc" %}
 {% include sc/who.html %}
@@ -103,13 +108,15 @@ Some affinity with general programming or scripting is desirable, but no previou
 {% endif %}
 
 
+{% comment %}
 LOCATION
 
 The workshop will be taking place in the main SURF building (Hoog Catherine) in Utrecht.
-
+{% endcomment %}
 {% if page.latlng %}
 <p id="where">
   <strong>Where:</strong>
+  
   {{page.address}}.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
@@ -140,11 +147,11 @@ SPECIAL REQUIREMENTS
 
 {% comment%}
 CODE OF CONDUCT
-{% endcomment %}
+
 <p id="code-of-conduct">
 <strong>Code of Conduct:</strong>  Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
 </p>
-
+{% endcomment %}
 
 {% comment %}
 ACCESSIBILITY
@@ -199,7 +206,6 @@ Display the contact email address set in the configuration file.
 
 {% comment %} 
 SURVEYS - DO NOT EDIT SURVEY LINKS 
-{% endcomment %}
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 {% if site.carpentry == "swc" %} 
@@ -214,6 +220,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endif %}
 
 <hr/>
+{% endcomment %}
 
 
 {% comment %}
@@ -222,7 +229,7 @@ SCHEDULE
 Show the workshop's schedule.  Edit the items and times in the table
 to match your plans.  You may also want to change 'Day 1' and 'Day
 2' to be actual dates or days of the week.
-{% endcomment %}
+
 <h2 id="schedule">Schedule</h2>
 
 {% if page.carpentry == "swc" %}
@@ -232,6 +239,7 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 {% elsif page.carpentry == "lc" %}
 {% include lc/schedule.html %}
 {% endif %}
+{% endcomment %}
 
 {% comment %}
 Collaborative Notes
@@ -242,7 +250,6 @@ http://pad.software-carpentry.org/YYYY-MM-DD-site
 
 where 'YYYY-MM-DD-site' is the identifier for your workshop,
 e.g., '2015-06-10-esu'.
-{% endcomment %}
 {% if page.collaborative_notes %}
 <p id="collaborative_notes">
   We will use this <a href="{{page.collaborative_notes}}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
@@ -250,6 +257,7 @@ e.g., '2015-06-10-esu'.
 {% endif %}
 
 <hr/>
+{% endcomment %}
 
 {% comment %}
 SYLLABUS
@@ -267,7 +275,6 @@ the div's with class="row" to balance the multi-column layout.
 This is one of the places where people frequently make mistakes, so
 please preview your site before committing, and make sure to run
 'tools/check' as well.
-{% endcomment %}
 <h2 id="syllabus">Syllabus</h2>
 
 {% if page.carpentry == "swc" %}
@@ -279,6 +286,7 @@ please preview your site before committing, and make sure to run
 {% endif %}
 
 <hr/>
+{% endcomment %}
 
 {% comment %}
 SETUP
@@ -290,7 +298,6 @@ and end easier to find.
 This is the other place where people frequently make mistakes, so
 please preview your site before committing, and make sure to run
 'tools/check' as well.
-{% endcomment %}
 
 <h2 id="setup">Setup</h2>
 
@@ -793,6 +800,7 @@ please preview your site before committing, and make sure to run
     </div>
   </div>
 </div> {% comment %} End of 'OpenRefine' section. {% endcomment %}
+{% endcomment %}
 
 {% comment %}
 <div id="vm">
