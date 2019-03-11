@@ -33,7 +33,7 @@ And run 'make workshop-check' *before* committing to make sure that changes are 
 
 {% comment %}
 For a workshop please delete the following block
-{% endcomment %}
+
 <div class="alert alert-danger">
 This is the workshop template. Delete these lines and use it to customize your
 own website. If you are running a self-organized workshop or have not put in a
@@ -42,6 +42,7 @@ workshop request yet, please also fill in
 about your workshop and our administrator may contact you if we need any extra
 information.
 </div>
+{% comment %}
 
 {% if page.carpentry != site.carpentry %}
 <div class="alert alert-warning">
@@ -138,9 +139,9 @@ This block displays the date and links to Google Calendar.
 </p>
 {% endif %}
 
-
+{% comment %}
 SPECIAL REQUIREMENTS
-
+{% endcomment %}
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring a laptop with a Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.).
 </p>
