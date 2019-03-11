@@ -1,19 +1,19 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-carpentry: "FIXME"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").  
+{% comment %} carpentry: "FIXME"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").  {% endcomment%}
                       # Be sure to update the Carpentry type in _config.yml as well.  
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
-latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+venue: "SURF Utrecht"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "Kantoren Hoog Overborch (Hoog Catharijne), Moreelsepark 48, 3511 EP Utrecht"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+country: "The Netherlands"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
+language: "English"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+latlng: "52.088924,5.113097"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
+humandate: "Apr 23-24, 2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am - 17:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2019-04-23      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2019-04-24        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Carlos Teijeiro Barjas"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["fixme@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+email: ["mateusz.kuzak@dtls.nl","carlos.teijeiro@surfsara.nl"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -72,12 +72,13 @@ displayed if the 'eventbrite' field in the header is not set.
 
 <h2 id="general">General Information</h2>
 
-{% comment %}
+
 INTRODUCTION
 
-Edit the general explanatory paragraph below if you want to change
-the pitch.
-{% endcomment %}
+This workshop will present an quick overview of machine learning techniques at introductory level, and then provide a focus on supervised learning techniques using deep learning / neural networks. Different examples on how to process images related to life sciences will be shown.
+
+The scope is eminently practical, and hands-on exercises will be performed using Python in a Jupyter notebook.
+
 {% if page.carpentry == "swc" %}
 {% include sc/intro.html %}
 {% elsif page.carpentry == "dc" %}
@@ -86,12 +87,13 @@ the pitch.
 {% include lc/intro.html %}
 {% endif %}
 
-{% comment %}
+
 AUDIENCE
 
-Explain who your audience is.  (In particular, tell readers if the
-workshop is only open to people from a particular institution.
-{% endcomment %}
+Any member of a partner organization of the ELIXIR project.
+
+Some affinity with general programming or scripting is desirable, but no previous Python experience is strictly necessary.
+
 {% if page.carpentry == "swc" %}
 {% include sc/who.html %}
 {% elsif page.carpentry == "dc" %}
@@ -100,14 +102,11 @@ workshop is only open to people from a particular institution.
 {% include lc/who.html %}
 {% endif %}
 
-{% comment %}
+
 LOCATION
 
-This block displays the address and links to maps showing directions
-if the latitude and longitude of the workshop have been set.  You
-can use https://itouchmap.com/latlong.html to find the lat/long of an
-address.
-{% endcomment %}
+The workshop will be taking place in the main SURF building (Hoog Catherine) in Utrecht.
+
 {% if page.latlng %}
 <p id="where">
   <strong>Where:</strong>
@@ -132,14 +131,11 @@ This block displays the date and links to Google Calendar.
 </p>
 {% endif %}
 
-{% comment %}
+
 SPECIAL REQUIREMENTS
 
-Modify the block below if there are any special requirements.
-{% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  <strong>Requirements:</strong> Participants must bring a laptop with a Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.).
 </p>
 
 {% comment%}
