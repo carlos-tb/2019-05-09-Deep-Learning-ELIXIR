@@ -73,9 +73,9 @@ displayed if the 'eventbrite' field in the header is not set.
 
 <h2 id="general">General Information</h2>
 
-
+{% comment %}
 INTRODUCTION
-
+{% endcomment %}
 This workshop will present an quick overview of machine learning techniques at introductory level, and then provide a focus on supervised learning techniques using deep learning / neural networks. Different examples on how to process images related to life sciences will be shown.
 
 The scope is eminently practical, and hands-on exercises will be performed using Python in a Jupyter notebook.
