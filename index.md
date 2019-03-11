@@ -100,9 +100,7 @@ AUDIENCE
 </p>
 
 
-{% if page.carpentry == "swc" %}
-{% include sc/who.html %}
-{% elsif page.carpentry == "dc" %}
+{% if page.carpentry == "dc" %}
 {% include dc/who.html %}
 {% elsif page.carpentry == "lc" %}
 {% include lc/who.html %}
