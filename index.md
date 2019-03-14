@@ -3,7 +3,7 @@ layout: workshop      # DON'T CHANGE THIS.
 carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").
                       # Be sure to update the Carpentry type in _config.yml as well.  
 venue: "Deep Learning for Life Sciences"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "SURF Utrecht. Kantoren Hoog Overborch (Hoog Catharijne), Moreelsepark 48, 3511 EP Utrecht"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+address: "SURF Utrecht. Kantoren Hoog Overborch (Hoog Catharijne), Moreelsepark 48, room 3.5, 3511 EP Utrecht"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "The Netherlands"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 language: "English"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 latlng: "52.088924,5.113097"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
@@ -77,10 +77,10 @@ INTRODUCTION
 
 
 <h2>Syllabus</h2>
-<h3>Day 1</h3>
 <p>Deep learning has become a really hot topic for different areas of research in order to extract information and correlations between huge amounts of data that are otherwise very difficult or even effectively impossible to process in a purely analytic way. This workshop will begin with a morning session that will be presenting an overview of machine learning techniques, and later on introducing the basics concepts needed to understand artificial neural networks.
 The afternoon session will be eminently practical and applied to life sciences. You may be able to learn the basic use of tools for image processing and tune the results of your neural network to achieve your goals.
 The hands-on exercises will be performed using the Python programming language in a Jupyter notebook.
+</p>
 
 <h2 id="general">General Information</h2>
 
