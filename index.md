@@ -90,7 +90,7 @@ AUDIENCE
 
 <p id="who">
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers, particularly from life sciences, who would like to know how to use a supercomputer.
+  The course is aimed at graduate students and other researchers, particularly from life sciences, who would like to know how the different deep learning techniques can be applied to their everyday work.
   <strong>
     No other experience is strictly necessary, but some affinity with general programming or scripting may be useful.
   </strong>
