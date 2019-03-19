@@ -264,9 +264,9 @@ please preview your site before committing, and make sure to run
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in this workshop,
-  you will need access to the software described below.
-  In addition, you will need an up-to-date web browser.
+  During this workshop you will be granted access to the computing facilities of SURFsara.
+  In order to use them, you will need an up-to-date web browser in your own laptop. Additionally,
+  it is highly recommended that your laptop has access to the software described below.
 </p>
 
 <div id="shell"> {% comment %} Start of 'shell' section. {% endcomment %}
@@ -452,7 +452,7 @@ please preview your site before committing, and make sure to run
   </p>
 
   <p>
-    We will teach Python using the <a href="https://jupyter.org/">Jupyter notebook</a>,
+    We will be running Python code using the <a href="https://jupyter.org/">Jupyter notebook</a>,
     a programming environment that runs in a web browser. For this to work you will need a reasonably
     up-to-date browser. The current versions of the Chrome, Safari and
     Firefox browsers are all
