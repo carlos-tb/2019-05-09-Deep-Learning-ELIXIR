@@ -102,7 +102,7 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 {% include lc/schedule.html %}
 {% endif %}
 
-</hr>
+<hr/>
 
 <h2 id="general">General Information</h2>
 
