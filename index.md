@@ -199,6 +199,8 @@ Display the contact email address set in the configuration file.
   	</a>
 </div>
 
+<p><a href="https://forms.gle/KBdyFzEY6RN5tn1v7">Post workshop survey<a><p>
+
 {% comment %} 
 SURVEYS - DO NOT EDIT SURVEY LINKS 
 <h2 id="surveys">Surveys</h2>
